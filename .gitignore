@@ -7,3 +7,6 @@
 # JetBrains IDEs
 /.idea
 *.iml
+
+# npm
+/node_modules

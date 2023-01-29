@@ -1,0 +1,7 @@
+{
+  "name": "@reifiedbeans/project-zombot",
+  "private": true,
+  "devDependencies": {
+    "conventional-changelog-conventionalcommits": "^5.0.0"
+  }
+}
