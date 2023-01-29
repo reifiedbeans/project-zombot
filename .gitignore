@@ -1,0 +1,9 @@
+# Build output
+/bin
+
+# macOS
+.DS_Store
+
+# JetBrains IDEs
+/.idea
+*.iml
