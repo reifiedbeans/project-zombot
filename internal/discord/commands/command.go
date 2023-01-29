@@ -8,12 +8,12 @@ import (
 type CommandInteraction struct {
 	tempest.CommandInteraction
 
-	log *zap.SugaredLogger
+	Log *zap.SugaredLogger
 }
 
 func (it *CommandInteraction) Defer() error {
 	if err := it.CommandInteraction.Defer(false); err != nil {
-		it.log.Errorw("Could not defer reply", zap.Error(err))
+		it.Log.Errorw("Could not defer reply", zap.Error(err))
 		return err
 	}
 	return nil
@@ -24,7 +24,7 @@ func (it *CommandInteraction) EditReply(msg string) error {
 		Content: msg,
 	}
 	if err := it.CommandInteraction.EditReply(res, false); err != nil {
-		it.log.Errorw("Could not edit reply", zap.Error(err))
+		it.Log.Errorw("Could not edit reply", zap.Error(err))
 		return err
 	}
 	return nil

@@ -19,6 +19,7 @@ func NewPlayersCommand(rcon *Rcon, log *zap.SugaredLogger) *Cmd {
 			SlashCommandHandler: func(itx tempest.CommandInteraction) {
 				it := CommandInteraction{
 					CommandInteraction: itx,
+					Log:                log,
 				}
 
 				if err := it.Defer(); err != nil {
