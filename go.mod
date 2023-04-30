@@ -2,11 +2,8 @@ module github.com/reifiedbeans/project-zombot
 
 go 1.19
 
-// Remove me once https://github.com/Amatsagu/Tempest/commit/0b2d29a6b73f7f80283d7e229edb2d3a21bad75c is released
-replace github.com/Amatsagu/Tempest => github.com/reifiedbeans/Tempest v0.0.0-20230124113543-0b2d29a6b73f
-
 require (
-	github.com/Amatsagu/Tempest v1.0.3
+	github.com/Amatsagu/Tempest v1.0.4
 	github.com/google/uuid v1.3.0
 	github.com/gorcon/rcon v1.3.4
 	github.com/pkg/errors v0.8.1
